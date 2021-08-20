@@ -4,7 +4,7 @@ class Controller
 {
     public function model($model)
     {
-        require_once '../app/models/' . $model . '.php';
+        require_once '../app/models/' . $model . 'Model.php';
         return new $model();
     }
 
